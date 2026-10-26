@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Skill Exchange Platform</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.hero {
+			text-align: center;
+			padding: 70px 20px;
+		}
+
+		.hero h1 {
+			font-size: 2.5rem;
+			margin-bottom: 15px;
+		}
+
+		.hero p {
+			font-size: 1.1rem;
+			max-width: 650px;
+			margin: 0 auto 25px;
+			line-height: 1.7;
+		}
+
+		.hero-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 15px;
+			flex-wrap: wrap;
+			margin-top: 25px;
+		}
+
+		.hero-buttons a {
+			display: inline-block;
+			padding: 12px 24px;
+			border-radius: 6px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.primary-btn {
+			background: #2563eb;
+			color: white;
+		}
+
+		.secondary-btn {
+			border: 2px solid #2563eb;
+			color: #2563eb;
+		}
+
+		.features {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+			padding: 30px 20px 60px;
+		}
+
+		.feature-card {
+			max-width: 280px;
+			padding: 25px;
+			border-radius: 10px;
+			background: #f4f7fb;
+			text-align: center;
+		}
+
+		.feature-card h3 {
+			margin-bottom: 10px;
+		}
+
+		.site-footer {
+			text-align: center;
+			padding: 20px;
+		}
+
+		#login-message {
+			display: none;
+			text-align: center;
+			padding: 12px;
+			margin: 15px auto;
+			max-width: 500px;
+			background: #dcfce7;
+			color: #166534;
+			border-radius: 6px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="register.html">Register</a>
+			<a href="login.html">Login</a>
+		</nav>
+	</header>
+
+	<main>
+		<div id="login-message" role="status">
+			Login successful! Welcome back to Skill Exchange Platform.
+		</div>
+
+		<section class="hero">
+			<h1>Welcome to Skill Exchange Platform</h1>
+			<p>
+				Learn new skills, share your knowledge, and connect
+				with people who want to grow together. Exchange what
+				you know for what you want to learn!
+			</p>
+			<div class="hero-buttons">
+				<a class="primary-btn" href="register.html">Get Started</a>
+				<a class="secondary-btn" href="login.html">Login</a>
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="feature-card">
+				<h3>📚 Learn Skills</h3>
+				<p>Discover opportunities to learn from other people and improve your abilities.</p>
+			</div>
+			<div class="feature-card">
+				<h3>🤝 Share Knowledge</h3>
+				<p>Share your strengths and help others learn something new.</p>
+			</div>
+			<div class="feature-card">
+				<h3>🌱 Grow Together</h3>
+				<p>Connect with learners and build a community based on sharing skills.</p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>&copy; 2026 Skill Exchange Platform. All rights reserved.</p>
+	</footer>
+
+	<script>
+		const params = new URLSearchParams(window.location.search);
+
+		if (params.get("login") === "success") {
+			document.getElementById("login-message").style.display = "block";
+		}
+	</script>
+</body>
+</html>

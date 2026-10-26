@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | Skill Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Skill Exchange</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h2>Create Your Student Account</h2>
+        <form action="register" method="post" class="register-form">
+            <p>
+                <label for="name">Full name</label><br>
+                <input id="name" name="name" type="text"
+                       maxlength="100" required>
+            </p>
+            <p>
+                <label for="email">Student email</label><br>
+                <input id="email" name="email" type="email"
+                       maxlength="255" required>
+            </p>
+            <p>
+                <label for="password">Password</label><br>
+                <input id="password" name="password" type="password"
+                       minlength="8" required>
+            </p>
+            <button class="button" type="submit">Create Account</button>
+        </form>
+        <p>Already registered? <a href="login.html">Log in</a></p>
+    </main>
+
+    <footer>
+        <p>Skill Exchange Platform | Student Project</p>
+    </footer>
+</body>
+</html>

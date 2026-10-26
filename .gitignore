@@ -1,0 +1,5 @@
+target/
+effective-pom.xml
+.env
+*.log
+.DS_Store
